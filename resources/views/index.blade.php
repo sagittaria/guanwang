@@ -72,7 +72,7 @@
 	              						<div class="mj_menu_news_li">
 	                						<div class="mj_menu_li_txt">
 	                							<a href="About.html">公司简介</a><br />	                  							
-							                  	<a href="{{ action('HomeController@listRecent') }}">公司动态</a><br />
+							                  	<a href="{{ url('/about/recent') }}">公司动态</a><br />
 							                  	<a href="About2.html">组织结构</a><br />
 							                  	<a href="About3.html">人才战略</a>
 	                						</div>

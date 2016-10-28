@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
-use App\Article;
-use EndaEditor;
 
 class HomeController extends Controller
 {
@@ -41,7 +39,7 @@ class HomeController extends Controller
         $article->title = $request->input('title');
         $article->content = $request->input('content');
         $article->save();
-        return redirect('/');
+        return redirect('/home');
     }
 
     public function edit($aid){
@@ -54,33 +52,13 @@ class HomeController extends Controller
     public function update(Request $request, $aid){
         //保存旧文的更改
         Article::where('id',$aid)->update($request->input('Article'));
-        return redirect('/');
+        return redirect('/home');
     }
 
     public function destroy($aid){
         Article::find($aid)->delete();
-        return redirect('/');
-    }
-
-    public function frontpage()
-    {
-        return view('index');
+        return redirect('/home');
     }
 
 
-    public function listRecent(){
-        //在官网上列出5篇
-        $articles = Article::orderBy('updated_at', 'desc')->get();
-        return view('recent',['articles' => $articles]);
-    }
-
-
-    public function show($aid)
-    {
-        //显示专门的一篇
-        $article = Article::findOrFail($aid);
-        //return view('recentDetail',['article'=>$article]);
-        $content = EndaEditor::MarkDecode($article->content);
-        return view('recentDetail',['content'=>$content,'article'=>$article]);
-    }  
 }

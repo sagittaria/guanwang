@@ -13,8 +13,6 @@
 
     <!-- Styles -->
     <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">-->
-    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
     <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
     @include('editor::head')
     
@@ -50,25 +48,24 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ action('HomeController@index') }}">新闻管理系统</a></li>
-                    <li><a href="{{ action('HomeController@create') }}">添加动态</a></li>
+                    <li><a href="{{ url('/home') }}">新闻管理系统</a></li>
+                    <li><a href="{{ url('/create/newArticle') }}">添加动态</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->
                     @if (Auth::guest())
-                        <li><a href="{{ url('/login') }}">Login</a></li>
-                        <li><a href="{{ url('/register') }}">Register</a></li>
+                        <li><a href="{{ url('/') }}" target="_blank">官网主页</a></li>
                     @else
-                        <li><a href="{{ url('/niulan') }}">官网主页</a></li>
+                        <li><a href="{{ url('/') }}" target="_blank">官网主页</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                 {{ Auth::user()->name }} <span class="caret"></span>
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                                <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>注销</a></li>
                             </ul>
                         </li>
                     @endif
@@ -82,7 +79,7 @@
     <!-- JavaScripts -->
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
     <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
-    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
 </body>
 </html>

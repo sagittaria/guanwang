@@ -12,11 +12,6 @@
 */
 
 
-Route::get('/', function () {
-    return view('index');
-});
-
-
 
 /*
 |--------------------------------------------------------------------------
@@ -33,7 +28,7 @@ Route::get('/', function () {
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
-	Route::get('/home', 'HomeController@index');
+	Route::get('/home', 'HomeController@index');//新闻管理系统首页
 
     Route::get('/create/newArticle','HomeController@create');//新建
     Route::post('/create','HomeController@store');//保存新文
@@ -41,7 +36,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::put('/edit/{aid}','HomeController@update');//保存更改
     Route::delete('/delete/{aid}','HomeController@destroy');//删除一篇
 
-    Route::get('/','HomeController@frontpage');//官网首页
-    Route::get('/about/recent','HomeController@listRecent');
-    Route::get('/about/recent/{aid}','HomeController@show');
+    Route::get('/','OfficialController@index');//官网首页
+    Route::get('/about/recent','OfficialController@listRecent');
+    Route::get('/about/recent/{aid}','OfficialController@showOneRecent');
 });

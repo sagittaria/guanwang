@@ -31,7 +31,7 @@
                     @foreach ($articles as $article)
                     <li>
                         
-                        <a style="display: inline;" href="{{ action('HomeController@show',[$article->id]) }}">{{ $article->title }}</a> <span>&nbsp;{{ $article->created_at }}</span>
+                        <a style="display: inline;" href="{{ action('OfficialController@showOneRecent',[$article->id]) }}">{{ $article->title }}</a> <span>&nbsp;{{ $article->created_at }}</span>
                         
                         <p>
                             @if(mb_strlen($article->content)>180)
