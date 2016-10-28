@@ -37,6 +37,11 @@ Route::group(['middleware' => 'web'], function () {
     Route::delete('/delete/{aid}','HomeController@destroy');//删除一篇
 
     Route::get('/','OfficialController@index');//官网首页
+    Route::get('/members','OfficialController@members');//纽蓝成员
+    Route::get('/member/{mid}','OfficialController@memberDetail');//成员详情
+    
+
+
     Route::get('/about/recent','OfficialController@listRecent');
     Route::get('/about/recent/{aid}','OfficialController@showOneRecent');
 });

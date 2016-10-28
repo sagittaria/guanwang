@@ -4,11 +4,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" name="viewport" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>首页</title>
-<link href="{{ asset('css/index.css') }}" rel="stylesheet">
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js') }}"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js') }}"></script>
+        <![endif]-->
+<!--nav css-->
 <script src="{{ asset('js/jquery.min.js') }}"></script>
-<script src="{{ asset('js/jquery-1.9.1.min.js') }}"></script>
-<script src="{{ asset('js/jquery.plugin.min.js') }}"></script>
-
+<!--banner css-->
+<script src="{{ asset('js/jquery-1.9.1.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('js/jquery.plugin.min.js') }}" type="text/javascript"></script>
+<!--nl css-->
+<link href="{{ asset('css/index.css') }}" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
@@ -23,39 +29,46 @@
 	        <div class="menu fr">
 	            <div class="navbox">
 	  				<div class="nav">
-	      				<li class="drop-menu-effect"><a style="cursor: default;"><span>首页</span></a></li>
-	      				<li class="drop-menu-effect"><a href="#"><span>解决方案</span></a>
+	      				<li class="drop-menu-effect"><a href="/"><span>首页</span></a></li>
+	      				<li class="drop-menu-effect"><a href="Solution.html"><span>解决方案</span></a>
 	        				<div class="submenu" style="left:-100px;">
 	          					<div class="mj_menu_news_bg">
 	            					<div class="mj_menu_news_main">
 	              						<div class="mj_menu_news_li">
 	                						<div class="mj_menu_li_txt">
-	                  							<a href="#">生命科学</a><br />
-	                  							<a href="#">化工与环境</a><br />
-	                  							<a href="#">食品安全</a><br />
-	                  							<a href="#">能源</a><br />
-	                  							<a href="#">研究</a><br />
-	                  							<a href="#">制药</a>
+	                  							<a href="Solution.html">生命科学</a><br />
+	                  							<a href="Solution1.html">化工与环境</a><br />
+	                  							<a href="Solution2.html">食品安全</a><br />
+	                  							<a href="Solution3.html">能源</a><br />
+	                  							<a href="Solution4.html">研究</a><br />
+	                  							<a href="Solution5.html">制药</a>
 	                						</div>
 	              						</div>
-	              						<div class="mj_menu_news_img"><img src="{{ asset('images/case_menu_pic.jpg') }}" /><br />
+	              						<div class="mj_menu_news_img"><img src="{{ asset('images/case_menu_pic2.jpg') }}" /><br />
 	                					<font>解决方案</font></div>
 	              						<div style="clear:both; height:0px; overflow:hidden;"></div>
 	            					</div>
 	          					</div>
 	        				</div>
 	      				</li>      
-	      				<li class="drop-menu-effect"><a href="#"><span>产品与服务</span></a>
+	      				<li class="drop-menu-effect"><a href="Product.html"><span>产品与服务</span></a>
 	        				<div class="submenu" style="left:-125px;">
 	          					<div class="mj_menu_news_bg">
 	            					<div class="mj_menu_news_main">
 	              						<div class="mj_menu_news_li">
-	                						<div class="mj_menu_li_txt">
-	                  							<a href="#">公司新闻</a><br />
-	                  							<a href="#">行业新闻</a><br />
-	                  							<a href="#">行业新闻</a><br />
-	                  							<a href="#">行业新闻</a><br />
-	                  							<a href="#">展会信息</a>
+	                						<div class="mj_menu_li_txt" style="float: left;margin-right: 20px;">
+	                  							<a href="http://www.iscimart.com/">化学分析仪器</a><br />
+	                  							<a href="http://www.iscimart.com/">光学仪器</a><br />
+	                  							<a href="http://www.iscimart.com/">物性测试</a><br />
+	                  							<a href="http://www.iscimart.com/">行业专用仪器</a><br />
+	                  							<a href="http://www.iscimart.com/">生命科学仪器</a>
+	                						</div>
+	                						<div class="mj_menu_li_txt" style="float: left;">
+	                							<a href="http://www.iscimart.com/">环境监测仪器</a><br />
+	                							<a href="http://www.iscimart.com/">实验室常用设备</a><br />
+	                  							<a href="http://www.iscimart.com/">试剂/耗材</a><br />
+	                  							<a href="http://www.iscimart.com/">技术服务</a><br />
+	                  							<a href="http://www.iscimart.com/">纽蓝产品</a>
 	                						</div>
 	              						</div>
 	              						<div class="mj_menu_news_img"><img src="{{ asset('images/case_menu_pic.jpg') }}" /><br />
@@ -64,40 +77,40 @@
 	            					</div>
 	          					</div>
 	        				</div>
-	      				</li>      
+	      				</li>
+	      				<li class="drop-menu-effect"> <a href="News.html"><span>公司动态</span></a>	        				
+	      				</li>
 	      				<li class="drop-menu-effect"> <a href="About.html"><span>关于纽蓝</span></a>
-	        				<div class="submenu" style="left:-220px;">
+	        				<div class="submenu" style="left:-320px;">
 	          					<div class="mj_menu_news_bg">
 	            					<div class="mj_menu_news_main">
 	              						<div class="mj_menu_news_li">
 	                						<div class="mj_menu_li_txt">
-	                							<a href="About.html">公司简介</a><br />	                  							
-							                  	<a href="{{ url('/about/recent') }}">公司动态</a><br />
+	                							<a href="About.html">公司简介</a><br />							                 	
 							                  	<a href="About2.html">组织结构</a><br />
-							                  	<a href="About3.html">人才战略</a>
+							                  	<a href="About3.html">人才战略</a><br />
+							                  	<a href="About5.html">联系我们</a>
 	                						</div>
 	              						</div>
-	              						<div class="mj_menu_news_img"><img src="{{ asset('images/case_menu_pic.jpg') }}" /><br />
+	              						<div class="mj_menu_news_img"><img src="{{ asset('images/case_menu_pic3.jpg') }}" /><br />
 	                					<font>关于纽蓝</font></div>
 	              						<div style="clear:both; height:0px; overflow:hidden;"></div>
 	            					</div>
 	          					</div>
 	        				</div>
-	      				</li>      
-	      				<li class="drop-menu-effect"> <a href="Contact.html"><span>联系我们</span></a>	        				
-	      				</li>      
-	      				<li class="drop-menu-effect"> <a href="Member.html"><span class="buy">纽蓝成员</span></a>
+	      				</li>	      				     
+	      				<li class="drop-menu-effect"> <a href="{{ url('/members') }}"><span class="buy">纽蓝成员</span></a>
 	      					<div class="submenu" style="left:-415px;">
 	          					<div class="mj_menu_news_bg">
 	            					<div class="mj_menu_news_main">
 	              						<div class="mj_menu_news_li">
 	                						<div class="mj_menu_li_txt">
-	                  							<a href="Member1.html">晶百检测</a><br />
-	                  							<a href="Member2.html">晶佰生物</a><br />
-							                  	<a href="Member3.html">爱科学</a>
+	                  							<a href="{{ url('/member/1') }}">晶百检测</a><br />
+	                  							<a href="{{ url('/member/2') }}">晶佰生物</a><br />
+							                  	<a href="{{ url('/member/3') }}">爱科学商城</a>
 	                						</div>
 	              						</div>
-	              						<div class="mj_menu_news_img"><img src="{{ asset('images/case_menu_pic.jpg') }}" /><br />
+	              						<div class="mj_menu_news_img"><img src="{{ asset('images/case_menu_pic1.jpg') }}" /><br />
 	                					<font>纽蓝成员</font></div>
 	              						<div style="clear:both; height:0px; overflow:hidden;"></div>
 	            					</div>
@@ -106,9 +119,8 @@
 	      				</li>
 	    			</div>
 				</div>
-				
+				<script src="{{ asset('js/jquery.min.js') }}"></script>
 				<script>
-
 				$(function(){
 					lanrenzhijia(".drop-menu-effect");
 				});
@@ -243,11 +255,15 @@
         <li class="item7">
             <div class="wrapper">
                 <div class="ad_txt">
-                    <h2>医院网站管理系统(HMS)</h2>
+                    <h2>NeoLab智能恒温水箱</h2>
                     <p>
-					与大型医院密切合作。<br />
-					诊疗挂号很轻松，检验结果实时查询，在线医患服务。<br />
-					便捷的数据处理能力，稳定的软件基础架构。
+					采用PID温控技术，高精度温控，高稳定性<br />
+					4.3寸高清触摸屏，实时显示温度控制曲线<br />
+					程序控温，满足个性化控温需求<br />
+					支持温控数据输出<br />
+					具备防干烧、高低温报警功能<br />
+					具备网口、WIFI，实现手机APP远程监控、故障报警；<br />
+					支持远程软件升级、故障诊断
                     </p>
                     <a href="#" target="_blank">了解详细&gt;</a>
                 </div>
@@ -280,7 +296,7 @@
 <div id="footer">
 	<div class="center">
 		<div class="left fl">
-			<li><a href="#">联系我们</a><span>丨</span>客服电话:400-0717-168</li>
+			<li><a href="About5.html">联系我们</a><span>丨</span>客服电话:400-0717-168</li>
 		</div>
 		<div class="right fr">
 			<li>杭州纽蓝科技有限公司--版权所有 浙ICP备11030739号</li>

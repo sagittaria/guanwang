@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+
+#content .right p{font-size: 14px;color: #404040;text-indent: 2em;line-height: 30px;padding-top: 40px;}
+#content .right .box img{float: right;padding: 40px 0 0 20px;}
+#content .right .text li{height: 22px;padding-left: 30px;line-height: 22px;margin: 28px 0;}
+#content .right .text li.icon1{background: url(../images/contact_06.jpg) no-repeat;}
+#content .right .text li.icon2{background: url(../images/contact_09.jpg) no-repeat;}
+#content .right .text li.icon3{background: url(../images/contact_12.jpg) no-repeat;}
+#content .right .text a{color: #498fe0;text-decoration: underline;display: inline;}

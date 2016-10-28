@@ -19,8 +19,8 @@ img{border: none;}
 #top .down{width: 100%;height: 80px;background: url(../images/74_02.jpg);}
 #top .down .logo{width: 400px;}
 #top .down .logo .logo1{margin-top: 18px;cursor: pointer;float: left;margin-right: 10px;}
-#top .down .logo h2{margin-top: 26px;color: #1C153F;font-family: '方正黑体简体';letter-spacing: 1px;}
-.navbox{height: 80px;position: relative;z-index: 9;filter: alpha(opacity=85);-moz-opacity: 0.85;opacity: 0.85;font-family: '微软雅黑';}
+#top .down .logo h2{margin-top: 26px;color: #1C153F;font-family: '方正黑体简体';}
+.navbox{height: 80px;position: relative;z-index: 9;font-family: '微软雅黑';}
 .nav{height: 80px;list-style: none;}
 .nav li{float: left;height: 80px;position: relative;list-style: none;margin-left: 40px;}
 .nav li a{text-decoration: none;}
@@ -51,7 +51,7 @@ img{border: none;}
 #banner_img{display: block;position: relative;height: 100%;}
 #banner_img li{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-position: center;background-size: cover;display: none;}
 #banner_img li.item1{background-image: url(../images/74_08.jpg);display: block;}
-#banner_img li.item2{background-image: url(../images/banner_bg2.jpg); }
+#banner_img li.item2{background-image: url(../images/index_04.jpg);}
 #banner_img li.item3{background-image: url(../images/banner_bg3.jpg); }
 #banner_img li.item4{background-image: url(../images/banner_bg4.jpg); }
 #banner_img li.item5{background-image: url(../images/banner_bg5.jpg); }

@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+
+#content .right .pic{margin: 0 auto;width: 662px;}
+#content .right .text li{height: 22px;padding-left: 30px;line-height: 22px;margin: 28px 0 28px 45px;}
+#content .right .text li.icon1{background: url(../images/contact_06.jpg) no-repeat;}
+#content .right .text li.icon2{background: url(../images/contact_09.jpg) no-repeat;}
+#content .right .text li.icon3{background: url(../images/contact_12.jpg) no-repeat;}
+#content .right .text a{color: #498fe0;text-decoration: underline;display: inline;margin-left: 45px;}

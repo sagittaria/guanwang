@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+
+#content .right h3{text-align: center;color: #404040;margin-top: 20px;font-size: 16px;}
+#content .right p{text-indent: 2em;color: #404040;line-height: 30px;font-size: 14px;}
+#content .right .text li{height: 22px;padding-left: 30px;line-height: 22px;margin: 25px 0;}
+#content .right .text li.icon2{background: url(../images/contact_09.jpg) no-repeat;}
+#content .right .text a{color: #498fe0;text-decoration: underline;display: inline;}

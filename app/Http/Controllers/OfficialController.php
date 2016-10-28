@@ -30,5 +30,15 @@ class OfficialController extends Controller
         //return view('recentDetail',['article'=>$article]);
 		$content = EndaEditor::MarkDecode($article->content);
 		return view('recentDetail',['content'=>$content,'article'=>$article]);
-	}  
+	} 
+
+	public function members()
+	{
+		return view('members',['cssname'=>'members.css']);
+	}
+
+	public function memberDetail($mid)
+	{
+		return view('member'.$mid,['cssname'=>'members'.$mid.'.css']);
+	}
 }
