@@ -39,7 +39,13 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/','OfficialController@index');//官网首页
     Route::get('/members','OfficialController@members');//纽蓝成员
     Route::get('/member/{mid}','OfficialController@memberDetail');//成员详情
-    
+    Route::get('/about','OfficialController@about');//关于纽蓝
+    Route::get('/about/{aid}','OfficialController@aboutDetail');//纽蓝详情
+    Route::get('/news','OfficialController@news');//新闻中心
+    Route::get('/news/{nid}','OfficialController@newsDetail');//新闻详情
+    Route::get('/product','OfficialController@product');//产品与服务
+    Route::get('/solution','OfficialController@solution');//解决方案
+    Route::get('/solution/{sid}','OfficialController@solutionDetail');//新闻详情
 
 
     Route::get('/about/recent','OfficialController@listRecent');

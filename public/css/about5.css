@@ -19,7 +19,7 @@ img{border: none;}
 #top .down{width: 100%;height: 80px;background: url(../images/74_02.jpg);}
 #top .down .logo{width: 400px;}
 #top .down .logo .logo1{margin-top: 18px;cursor: pointer;float: left;margin-right: 10px;}
-#top .down .logo h2{margin-top: 26px;color: #1C153F;font-family: '方正黑体简体';letter-spacing: 1px;}
+#top .down .logo h2{margin-top: 26px;color: #1C153F;font-family: '方正黑体简体';}
 .navbox{height: 80px;position: relative;z-index: 9;font-family: '微软雅黑';}
 .nav{height: 80px;list-style: none;}
 .nav li{float: left;height: 80px;position: relative;list-style: none;margin-left: 40px;}
@@ -50,16 +50,33 @@ img{border: none;}
 #banner img{width: 100%;}
 
 /*content*/
-#content{padding-top: 35px;height: 989px;}
+#content{padding-top: 35px;height: 669px;}
 #content .left a{width: 200px;font-size: 14px;color: #454444;padding: 20px 0 20px 20px;background: #f2f2f2;}
 #content .left li.title{width: 200px;font-size: 16px;color: #fff;background: #498fe0;padding: 20px 0 20px 20px;}
 #content .left a:hover{background: #fff;color: #498fe0;border-left: 2px solid #498fe0;box-sizing: border-box;padding: 20px 0 20px 18px;}
-#content .right{width: 720px;position: relative;}
+#content .right{width: 720px;position: relative;height: 500px;}
 #content .right h2{height: 55px;border-bottom: 1px solid #A8A8A8;line-height: 75px;}
 #content .right .add{background: url(../images/about_05.jpg) no-repeat 0 center;height: 17px;padding-left: 15px;position: absolute;top: 30px;right: 0;}
 #content .right .add li{float: left;padding: 0 5px;}
 #content .right .add a{display: inline;float: left;}
 #content .right .add a:hover{color: #498FE0;}
+#content .right .text{float: left;margin: 0 25px;}
+#content .right .text li{height: 22px;padding-left: 30px;line-height: 22px;margin: 28px 0;}
+#content .right .text li.icon{font-size: 14px;color: #000000;}
+#content .right .text li.icon1{background: url(../images/contact_06.jpg) no-repeat;}
+#content .right .text li.icon2{background: url(../images/contact_09.jpg) no-repeat;}
+#content .right .text li.icon3{background: url(../images/contact_12.jpg) no-repeat;}
+#content .right .text li.icon4{background: url(../images/contact_16.jpg) no-repeat;}
+#content .right .pic{float: left;}
+#content .right .pic img{border: 1px solid #ABABAB;margin: 25px 0 0 45px;}
+#content .right .msg1{position: absolute;bottom: 0;left: 25px;}
+#content .right .msg1 li{text-align: center;margin: 10px 0;color: #000000;}
+#content .right .msg1 li.con{color: #498fe0;}
+#content .right .msg1 img{margin: 0 20px;}
+#content .right .msg2{position: absolute;bottom: 0;left: 200px;}
+#content .right .msg2 li{text-align: center;margin: 10px 0;color: #000000;}
+#content .right .msg2 li.con{color: #498fe0;}
+#content .right .msg2 img{margin: 0 20px;}
 
 /*footer*/
 #footer .up{width: 100%;height: 237px;background: #676767;}

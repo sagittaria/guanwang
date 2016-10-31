@@ -30,18 +30,18 @@
 	            <div class="navbox">
 	  				<div class="nav">
 	      				<li class="drop-menu-effect"><a href="/"><span>首页</span></a></li>
-	      				<li class="drop-menu-effect"><a href="Solution.html"><span>解决方案</span></a>
+	      				<li class="drop-menu-effect"><a href="{{ url('/solution') }}"><span>解决方案</span></a>
 	        				<div class="submenu" style="left:-100px;">
 	          					<div class="mj_menu_news_bg">
 	            					<div class="mj_menu_news_main">
 	              						<div class="mj_menu_news_li">
 	                						<div class="mj_menu_li_txt">
-	                  							<a href="Solution.html">生命科学</a><br />
-	                  							<a href="Solution1.html">化工与环境</a><br />
-	                  							<a href="Solution2.html">食品安全</a><br />
-	                  							<a href="Solution3.html">能源</a><br />
-	                  							<a href="Solution4.html">研究</a><br />
-	                  							<a href="Solution5.html">制药</a>
+	                  							<a href="{{ url('/solution') }}">生命科学</a><br />
+	                  							<a href="{{ url('/solution/1') }}">化工与环境</a><br />
+	                  							<a href="{{ url('/solution/2') }}">食品安全</a><br />
+	                  							<a href="{{ url('/solution/3') }}">能源</a><br />
+	                  							<a href="{{ url('/solution/4') }}">研究</a><br />
+	                  							<a href="{{ url('/solution/5') }}">制药</a>
 	                						</div>
 	              						</div>
 	              						<div class="mj_menu_news_img"><img src="{{ asset('images/case_menu_pic2.jpg') }}" /><br />
@@ -51,24 +51,24 @@
 	          					</div>
 	        				</div>
 	      				</li>      
-	      				<li class="drop-menu-effect"><a href="Product.html"><span>产品与服务</span></a>
-	        				<div class="submenu" style="left:-125px;">
+	      				<li class="drop-menu-effect"><a href="{{ url('/product') }}"><span>产品与服务</span></a>
+	        				<div class="submenu" style="left:-113px;">
 	          					<div class="mj_menu_news_bg">
 	            					<div class="mj_menu_news_main">
 	              						<div class="mj_menu_news_li">
 	                						<div class="mj_menu_li_txt" style="float: left;margin-right: 20px;">
-	                  							<a href="http://www.iscimart.com/">化学分析仪器</a><br />
-	                  							<a href="http://www.iscimart.com/">光学仪器</a><br />
-	                  							<a href="http://www.iscimart.com/">物性测试</a><br />
-	                  							<a href="http://www.iscimart.com/">行业专用仪器</a><br />
-	                  							<a href="http://www.iscimart.com/">生命科学仪器</a>
+	                  							<a href="#">化学分析仪器</a><br />
+	                  							<a href="#">光学仪器</a><br />
+	                  							<a href="#">物性测试</a><br />
+	                  							<a href="#">行业专用仪器</a><br />
+	                  							<a href="#">生命科学仪器</a>
 	                						</div>
 	                						<div class="mj_menu_li_txt" style="float: left;">
-	                							<a href="http://www.iscimart.com/">环境监测仪器</a><br />
-	                							<a href="http://www.iscimart.com/">实验室常用设备</a><br />
-	                  							<a href="http://www.iscimart.com/">试剂/耗材</a><br />
-	                  							<a href="http://www.iscimart.com/">技术服务</a><br />
-	                  							<a href="http://www.iscimart.com/">纽蓝产品</a>
+	                							<a href="#">环境监测仪器</a><br />
+	                							<a href="#">实验室常用设备</a><br />
+	                  							<a href="#">试剂/耗材</a><br />
+	                  							<a href="#">技术服务</a><br />
+	                  							<a href="#">纽蓝产品</a>
 	                						</div>
 	              						</div>
 	              						<div class="mj_menu_news_img"><img src="{{ asset('images/case_menu_pic.jpg') }}" /><br />
@@ -78,18 +78,34 @@
 	          					</div>
 	        				</div>
 	      				</li>
-	      				<li class="drop-menu-effect"> <a href="News.html"><span>公司动态</span></a>	        				
+	      				<li class="drop-menu-effect"> <a href="{{ url('/news') }}"><span>新闻中心</span></a>
+	      					<div class="submenu" style="left:-222px;">
+	          					<div class="mj_menu_news_bg">
+	            					<div class="mj_menu_news_main">
+	              						<div class="mj_menu_news_li">
+	                						<div class="mj_menu_li_txt">
+	                							<a href="{{ url('/news') }}">公司动态</a><br />							                 	
+							                  	<a href="{{ url('/news/1') }}">活动信息</a><br />
+							                  	<a href="{{ url('/news/2') }}">行业动态</a>
+	                						</div>
+	              						</div>
+	              						<div class="mj_menu_news_img"><img src="{{ asset('images/case_menu_pic4.jpg') }}" /><br />
+	                					<font>新闻中心</font></div>
+	              						<div style="clear:both; height:0px; overflow:hidden;"></div>
+	            					</div>
+	          					</div>
+	        				</div>
 	      				</li>
-	      				<li class="drop-menu-effect"> <a href="About.html"><span>关于纽蓝</span></a>
+	      				<li class="drop-menu-effect"> <a href="{{ url('/about') }}"><span>关于纽蓝</span></a>
 	        				<div class="submenu" style="left:-320px;">
 	          					<div class="mj_menu_news_bg">
 	            					<div class="mj_menu_news_main">
 	              						<div class="mj_menu_news_li">
 	                						<div class="mj_menu_li_txt">
-	                							<a href="About.html">公司简介</a><br />							                 	
-							                  	<a href="About2.html">组织结构</a><br />
-							                  	<a href="About3.html">人才战略</a><br />
-							                  	<a href="About5.html">联系我们</a>
+	                							<a href="{{ url('/about') }}">公司简介</a><br />							                 	
+							                  	<a href="{{ url('/about/2') }}">组织结构</a><br />
+							                  	<a href="{{ url('/about/3') }}">人才战略</a><br />
+							                  	<a href="{{ url('/about/5') }}">联系我们</a>
 	                						</div>
 	              						</div>
 	              						<div class="mj_menu_news_img"><img src="{{ asset('images/case_menu_pic3.jpg') }}" /><br />
@@ -157,12 +173,12 @@
         <li class="item1">
             <div class="wrapper">
                 <div class="ad_txt">
-                    <h2>互联网品牌传播解决方案</h2>
+                    <h2>测定基因序列，预测疾病患病风险</h2>
                     <p>
-					成都顶级品牌网站建设公司-锐狐网络。<br />
-					基于互联网的品牌行销策略的策划与执行。<br />
-					品牌形象挖掘、梳理、包装、表现与传播。<br />
-					辅助企业实现品牌战略目标的互联网解决方案。
+					重大疾病风险预测.<br />
+					新生儿疾病筛查.<br />
+					药物开发.<br />
+					法医基因组学.
                     </p>
                     <a href="#" target="_blank">了解详细&gt;</a>
                 </div>
@@ -174,11 +190,13 @@
         <li class="item2">
             <div class="wrapper">
                 <div class="ad_txt">
-                    <h2>Web应用(B/S)定制开发</h2>
+                    <h2>关注空气和水质，改善生活环境</h2>
                     <p>
-					自主研发、完善的开发框架。<br />
-					详细的需求调研及解决方案。<br />
-					实施项目经验丰富的项目团队。
+					PM2.5浓度监测方案.<br />
+					污染源烟尘烟气检测.<br />
+					水质COD全自动检测.<br />
+					Ph/氟离子全自动检测.<br />
+					水中重金属、微生物检测.
                     </p>
                     <a href="#" target="_blank">了解详细&gt;</a>
                 </div>
@@ -190,11 +208,13 @@
         <li class="item3">
             <div class="wrapper">
                 <div class="ad_txt">
-                    <h2>互联网时代的整合营销</h2>
+                    <h2>聚焦食品安全，享受健康生活</h2>
                     <p>
-					基于互联网的品牌营销策略的定制与执行。<br />
-					品牌形象挖掘、梳理、包装、表现与传播。<br />
-					坐拥着最为丰富的行业经验与优势资源。
+					食品微生物检测.<br />
+					农兽药残留检测.<br />
+					营养素含量检测.<br />
+					包装材料安全检测.<br />
+					重金属等有毒有害物质检测.
                     </p>
                     <a href="#" target="_blank">了解详细&gt;</a>
                 </div>
@@ -206,11 +226,14 @@
         <li class="item4">
             <div class="wrapper">
                 <div class="ad_txt">
-                    <h2>您的网站全职管家</h2>
+                    <h2>电池行业品质检测，助力电池行业的发展</h2>
                     <p>
-					成熟的监控与报警机制。<br />
-					丰富的整合营销的能力和经验。<br />
-					专业数据分析、开发和维护部门。
+					正负极材料表征检测.<br />
+					浆料流变性、触变性研究.<br />
+					极片、粉料形貌分析.<br />
+					膈膜性能检测.<br />
+					隔膜、电解液中水分含量检测.<br />
+					电解液有机物、阴阳离子含量分析.
                     </p>
                     <a href="#" target="_blank">了解详细&gt;</a>
                 </div>
@@ -222,11 +245,11 @@
         <li class="item5">
             <div class="wrapper">
                 <div class="ad_txt">
-                    <h2>智慧点亮网络(RUIFOX-LAB)</h2>
+                    <h2>创新基因测序技术，造福人类</h2>
                     <p>
-					互联网改变世界，我们改变互联网。<br />
-					精彩前沿技术演练场。<br />
-					锐狐新产品尝鲜体验。
+					食品微生物研究.<br />
+					农业育种研究.<br />
+					肿瘤研究.
                     </p>
                     <a href="#" target="_blank">了解详细&gt;</a>
                 </div>
@@ -238,17 +261,17 @@
         <li class="item6">
             <div class="wrapper">
                 <div class="ad_txt">
-                    <h2>全新的学术会议体验</h2>
+                    <h2>监控药物质量，维护生命安全</h2>
                     <p>
-					工作更高效，主办方更轻松。<br />
-					线上报名，让主办方不再为报名的事而费尽脑筋。<br />
-					线上投稿、审稿，为主办方提高收寄、审稿效率。<br />
-					酒店预订，会议行程更加轻松。
+					药品安全检测.<br />
+					药物成分检测.<br />
+					药物特性检测.<br />
+					药品重金属检测.
                     </p>
                     <a href="#" target="_blank">了解详细&gt;</a>
                 </div>
                 <div class="ad_img">
-                    <img src="{{ asset('images/20120830015651273.png') }}" width="406" height="304" alt="全新的学术会议体验" />
+                    <img src="{{ asset('images/20120830015651273.png') }}" width="406" height="304" alt="制药" />
                 </div>
             </div>
         </li>
@@ -257,13 +280,13 @@
                 <div class="ad_txt">
                     <h2>NeoLab智能恒温水箱</h2>
                     <p>
-					采用PID温控技术，高精度温控，高稳定性<br />
-					4.3寸高清触摸屏，实时显示温度控制曲线<br />
-					程序控温，满足个性化控温需求<br />
-					支持温控数据输出<br />
-					具备防干烧、高低温报警功能<br />
-					具备网口、WIFI，实现手机APP远程监控、故障报警；<br />
-					支持远程软件升级、故障诊断
+					采用PID温控技术，高精度温控，高稳定性.<br />
+					4.3寸高清触摸屏，实时显示温度控制曲线.<br />
+					程序控温，满足个性化控温需求.<br />
+					支持温控数据输出.<br />
+					具备防干烧、高低温报警功能.<br />
+					具备网口、WIFI，实现手机APP远程监控、故障报警.<br />
+					支持远程软件升级、故障诊断.
                     </p>
                     <a href="#" target="_blank">了解详细&gt;</a>
                 </div>
@@ -278,12 +301,12 @@
         <ul>
             <li class="first-item">网站建设</li>
             <li>生命科学</li>
-            <li>应用系统开发</li>
-            <li>网络整合营销</li>
-            <li>网络运维托管</li>
-            <li>手机APP开发</li>
-            <li>学术会议系统</li>
-            <li>医院网站系统</li>
+            <li>化工与环境</li>
+            <li>食品安全</li>
+            <li>能源</li>
+            <li>研究</li>
+            <li>制药</li>
+            <li>最新专题</li>
             <li class="last-item">网站设计</li>
         </ul>
         <div id="drag_arrow"></div>

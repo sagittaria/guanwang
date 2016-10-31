@@ -41,4 +41,39 @@ class OfficialController extends Controller
 	{
 		return view('member'.$mid,['cssname'=>'members'.$mid.'.css']);
 	}
+	
+	public function about()
+	{
+		return view('about',['cssname'=>'about.css']);
+	}
+	
+	public function aboutDetail($aid)
+	{
+		return view('about'.$aid,['cssname'=>'about'.$aid.'.css']);
+	}
+	
+	public function news()
+	{
+		return view('news',['cssname'=>'news.css']);
+	}
+	
+	public function newsDetail($nid)
+	{
+		return view('news'.$nid,['cssname'=>'news'.$nid.'.css']);
+	}
+	
+	public function product()
+	{
+		return view('product',['cssname'=>'product.css']);
+	}
+	
+	public function solution()
+	{
+		return view('solution',['cssname'=>'solution.css']);
+	}
+	
+	public function solutionDetail($sid)
+	{
+		return view('solution'.$sid,['cssname'=>'solution'.$sid.'.css']);
+	}
 }
