@@ -31,7 +31,7 @@
         <div class="container">
             <div class="navbar-header">
 
-                <!-- Collapsed Hamburger -->
+                <!-- Collapsed Hamburger-->
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
                     <span class="sr-only">Toggle Navigation</span>
                     <span class="icon-bar"></span>
@@ -41,14 +41,14 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" style="cursor: default;">
-                    纽蓝科技
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;纽蓝科技
                 </a>
             </div>
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/home') }}">新闻管理系统</a></li>
+                    <li><a href="{{ url('/home') }}">首页</a></li>
                     <li><a href="{{ url('/create/newArticle') }}">添加动态</a></li>
                 </ul>
 
