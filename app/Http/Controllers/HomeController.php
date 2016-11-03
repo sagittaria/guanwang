@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
+use App\Article;
+use App\Catalog;
 
 class HomeController extends Controller
 {
@@ -30,7 +32,8 @@ class HomeController extends Controller
 
     public function create(){
         //新建
-        return view('createNewArticle');
+		$catalogs = Catalog::orderBy('id')->get();
+		return view('createNewArticle',['catalogs' => $catalogs]);
     }
 
     public function store(Request $request){
@@ -38,6 +41,7 @@ class HomeController extends Controller
         $article = new Article;
         $article->title = $request->input('title');
         $article->content = $request->input('content');
+		$article->catalog_id = $request->input('catalog_id');
         $article->save();
         return redirect('/home');
     }
@@ -45,8 +49,8 @@ class HomeController extends Controller
     public function edit($aid){
         //编辑旧文界面
         $article = Article::findOrFail($aid);
-        return view('editOldArticle',['article'=>$article]);
-
+		$catalogs = Catalog::where('id','<>',$article->catalog_id)->orderBy('id')->get();
+        return view('editOldArticle',['article'=>$article,'catalogs' => $catalogs]);
     }
 
     public function update(Request $request, $aid){
