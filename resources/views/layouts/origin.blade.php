@@ -20,7 +20,7 @@
 	<div class="down">
 	    <div class="center">
 	        <div class="logo fl">
-	            <a href="index.html"><img class="logo1" src="{{ asset('images/logo.jpg') }}" /></a>
+	            <a href="/"><img class="logo1" src="{{ asset('images/logo.jpg') }}" /></a>
 	            <h2>杭州纽蓝科技有限公司</h2>
 	        </div>
 	        <div class="menu fr">
@@ -179,29 +179,29 @@
 		<div class="center">
 			<div class="left fl">
 				<div class="box">
-					<a href="About.html" class="title">关于纽蓝</a>
-					<a href="About.html">公司简介</a>					
-					<a href="About2.html">组织结构</a>
-					<a href="About3.html">人才战略</a>
-					<a href="About5.html">联系我们</a>
+					<a href="{{ url('/about') }}" class="title">关于纽蓝</a>
+					<a href="{{ url('/about') }}">公司简介</a>					
+					<a href="{{ url('/about/2') }}">组织结构</a>
+					<a href="{{ url('/about/3') }}">人才战略</a>
+					<a href="{{ url('/about/5') }}">联系我们</a>
 				</div>
 				<div class="box">
-					<a href="Solution.html" class="title">解决方案</a>
-					<a href="Solution.html">生命科学</a>
-					<a href="Solution1.html">化工与环境</a>
-					<a href="Solution2.html">食品安全</a>
-					<a href="Solution3.html">能源</a>
-					<a href="Solution4.html">研究</a>
-					<a href="Solution5.html">制药</a>
+					<a href="{{ url('/solution') }}" class="title">解决方案</a>
+					<a href="{{ url('/solution') }}">生命科学</a>
+					<a href="{{ url('/solution/1') }}">化工与环境</a>
+					<a href="{{ url('/solution/2') }}">食品安全</a>
+					<a href="{{ url('/solution/3') }}">能源</a>
+					<a href="{{ url('/solution/4') }}">研究</a>
+					<a href="{{ url('/solution/5') }}">制药</a>
 				</div>
 				<div class="box">
 					<a href="Member.html" class="title">纽蓝成员</a>
-					<a href="http://www.gbiotest.com/">晶百检测</a>
-					<a href="http://igeneseq.com/">晶佰生物</a>
-					<a href="http://www.iscimart.com/">爱科学商城</a>
+					<a href="{{ url('http://www.gbiotest.com/') }}">晶百检测</a>
+					<a href="{{ url('http://igeneseq.com/') }}">晶佰生物</a>
+					<a href="{{ url('http://www.iscimart.com/') }}">爱科学商城</a>
 				</div>
 				<div class="box" style="margin-right: 0;">
-					<a href="About5.html" class="title">联系我们</a>
+					<a href="{{ url('/about/5') }}" class="title">联系我们</a>
 					<li>地址：杭州市西湖区振华路210号2幢2楼</li>
 					<li>公司电话-0571-86800217</li>
 					<li>热线：40-0717-168</li>
@@ -216,7 +216,7 @@
 	<div class="down">
 		<div class="center">
 			<div class="left fl">
-				<li><a href="About5.html">联系我们</a><span>丨</span>客服电话:400-0717-168</li>
+				<li><a href="{{ url('/about/5') }}">联系我们</a><span>丨</span>客服电话:400-0717-168</li>
 			</div>
 			<div class="right fr">
 				<li>杭州纽蓝科技有限公司--版权所有 浙ICP备11030739号</li>

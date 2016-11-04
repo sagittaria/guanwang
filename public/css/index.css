@@ -19,7 +19,7 @@ img{border: none;}
 #top .down{width: 100%;height: 80px;background: url(../images/74_02.jpg);}
 #top .down .logo{width: 400px;}
 #top .down .logo .logo1{margin-top: 18px;cursor: pointer;float: left;margin-right: 10px;}
-#top .down .logo h2{margin-top: 26px;color: #1C153F;font-family: '方正黑体简体';}
+#top .down .logo h2{margin-top: 26px;color: #1C153F;font-family: '方正黑体简体';letter-spacing: 1px;}
 .navbox{height: 80px;position: relative;z-index: 9;font-family: '微软雅黑';}
 .nav{height: 80px;list-style: none;}
 .nav li{float: left;height: 80px;position: relative;list-style: none;margin-left: 40px;}
@@ -46,7 +46,7 @@ img{border: none;}
 .mj_menu_news_img3{float: left;margin-left: 10px;text-align: left;color: #0084cf;line-height: 30px;font-size: 14px;}
 
 /*banner*/
-#banner{width: 100%;height: 100%;background: #000;overflow: hidden;position: relative;z-index: 0;}
+#banner{width: 100%;height: 100%;background: #fff;overflow: hidden;position: relative;z-index: 0;}
 .wrapper{width: 986px;margin: 0 auto;position: relative;height: 100%;}
 #banner_img{display: block;position: relative;height: 100%;}
 #banner_img li{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-position: center;background-size: cover;display: none;}
@@ -54,21 +54,20 @@ img{border: none;}
 #banner_img li.item2{background-image: url(../images/index_04.jpg);}
 #banner_img li.item3{background-image: url(../images/74_07.jpg); }
 #banner_img li.item4{background-image: url(../images/banner_bg4.jpg); }
-#banner_img li.item5{background-image: url(../images/banner_bg5.jpg); }
-#banner_img li.item6{background-image: url(../images/banner_bg6.jpg); }
-#banner_img li.item7{background-image: url(../images/banner_bg7.jpg); }
-#banner_img li.item8{background-image: url(../images/banner_bg8.jpg); }
+#banner_img li.item5{background-image: url(../images/74_03.jpg); }
+#banner_img li.item6{background-image: url(../images/74_04.jpg); }
+#banner_img li.item7{background-image: url(../images/74_06.jpg); }
 #banner_img .ad_img{position: absolute;right: 10px;top: 25%;width: 406px;height: 304px;}
 #banner_img .ad_txt{position: absolute;left: 10px;top: 25%;color: #fff;text-shadow: 1px 1px rgba(51,51,51,0.3);}
 #banner_img .ad_txt h2{font: bold 25px/60px Microsoft YaHei;}
-#banner_img .ad_txt a{display: block;width: 100px;height: 25px;line-height: 25px;text-align: center;margin-top: 10px;background: #fff;color: #666;text-decoration: none;text-shadow: none;}
+#banner_img .ad_txt a{display: block;width: 100px;height: 25px;line-height: 25px;text-align: center;margin-top: 20px;background: #0084CF;color: #fff;text-decoration: none;text-shadow: none;}
 #banner_ctr{position: absolute;width: 960px;height: 122px;margin-left: -440px;left: 50%;bottom: 8%;z-index: 1;}
 #banner_ctr ul{width: 960px;height: 122px;background: url(../images/serv_ico.png) 0 no-repeat;font-size: 0;line-height: 0;position: relative;}
 #banner_ctr li{display: block;float: left;width: 115px;height: 122px;cursor: pointer;}
 #banner_ctr li.first-item{background: #fff;width: 20px;-webkit-border-radius: 20px 0 0 20px;-moz-border-radius: 20px 0 0 20px;border-radius: 20px 0 0 20px;cursor: default;}
 #banner_ctr li.last-item{background: #fff;width: 20px;-webkit-border-radius: 0 20px 20px 0;-moz-border-radius: 0 20px 20px 0;border-radius: 0 20px 20px 0;cursor: default;}
 #drag_ctr{position: absolute;top: -10px;left: 20px;width: 115px;height: 142px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;bottom: 170px;background: #0084cf;}
-#drag_arrow{position: absolute;top: -14px;left: 20px;width: 115px;height: 156px;background: url(../images/drag_banner_arrow.gif) center 14px no-repeat;}
+#drag_arrow{position: absolute;top: -14px;left: 20px;width: 115px;height: 156px;background: url(../images/drag_banner_arrow.png) center 14px no-repeat;}
 
 /*footer*/
 #footer{background: #000;width: 100%;position: fixed;left: 0;bottom: 0;}

@@ -3,7 +3,7 @@
 @section('content')
 <!--banner-->
 <div id="banner">
-	<img src="{{ asset('images/about_02.jpg') }}"/>
+	<img src="{{ asset('images/news.jpg') }}"/>
 </div>
 <!--banner end-->
 
@@ -30,25 +30,25 @@
 			</div>
 			<div class="box">
 				<img src="{{ asset('images/about1_03.jpg') }}"/>
-				<a href="About4.html">基因芯片扫描服务</a>
+				<a href="/news/3">基因芯片扫描服务</a>
 				<li>2016-2-13</li>				
 				<p>HiScan系统是一套技术领先，专业的芯片扫描系统，支持快速，灵敏和精确的illumina芯片基因分析产品的成像。与iScan功能类似，该系统具有高信噪比、高敏感性、精确的检测限制、广泛的动力学范围从而可获得极高品质的数据...</p>
 			</div>
 			<div class="box">
 				<img src="{{ asset('images/about1_03.jpg') }}"/>
-				<a href="About4.html">第五届浙江省色谱质谱分析技术青年论坛圆满落幕</a>
+				<a href="/news/3">第五届浙江省色谱质谱分析技术青年论坛圆满落幕</a>
 				<li>2016-2-13</li>				
 				<p>HiScan系统是一套技术领先，专业的芯片扫描系统，支持快速，灵敏和精确的illumina芯片基因分析产品的成像。与iScan功能类似，该系统具有高信噪比、高敏感性、精确的检测限制、广泛的动力学范围从而可获得极高品质的数据...</p>
 			</div>
 			<div class="box">
 				<img src="{{ asset('images/about1_03.jpg') }}"/>
-				<a href="About4.html">第五届浙江省色谱质谱分析技术青年论坛圆满落幕</a>
+				<a href="/news/3">第五届浙江省色谱质谱分析技术青年论坛圆满落幕</a>
 				<li>2016-2-13</li>				
 				<p>HiScan系统是一套技术领先，专业的芯片扫描系统，支持快速，灵敏和精确的illumina芯片基因分析产品的成像。与iScan功能类似，该系统具有高信噪比、高敏感性、精确的检测限制、广泛的动力学范围从而可获得极高品质的数据...</p>
 			</div>
 			<div class="box" style="margin-bottom: 50px;">
 				<img src="{{ asset('images/about1_03.jpg') }}"/>
-				<a href="About4.html">第五届浙江省色谱质谱分析技术青年论坛圆满落幕</a>
+				<a href="/news/3">第五届浙江省色谱质谱分析技术青年论坛圆满落幕</a>
 				<li>2016-2-13</li>				
 				<p>HiScan系统是一套技术领先，专业的芯片扫描系统，支持快速，灵敏和精确的illumina芯片基因分析产品的成像。与iScan功能类似，该系统具有高信噪比、高敏感性、精确的检测限制、广泛的动力学范围从而可获得极高品质的数据...</p>
 			</div>

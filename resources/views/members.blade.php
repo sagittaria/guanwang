@@ -3,7 +3,7 @@
 @section('content')
 <!--banner-->
 <div id="banner">
-	<img src="images/member_02.jpg"/>
+	<img src="{{ asset('images/members.jpg') }}"/>
 </div>
 <!--banner end-->
 

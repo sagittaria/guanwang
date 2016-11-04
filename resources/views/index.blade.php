@@ -4,15 +4,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" name="viewport" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>首页</title>
-<!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js') }}"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js') }}"></script>
-        <![endif]-->
-<!--nav css-->
-<script src="{{ asset('js/jquery.min.js') }}"></script>
-<!--banner css-->
-<script src="{{ asset('js/jquery-1.9.1.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('js/jquery.plugin.min.js') }}" type="text/javascript"></script>
 <!--nl css-->
 <link href="{{ asset('css/index.css') }}" type="text/css" rel="stylesheet" />
 </head>
@@ -23,7 +14,7 @@
 	<div class="down">
 	    <div class="center">
 	        <div class="logo fl">
-	            <a href="index.html"><img class="logo1" src="{{ asset('images/logo.jpg') }}" /></a>
+	            <a href="/"><img class="logo1" src="{{ asset('images/logo.jpg') }}" /></a>
 	            <h2>杭州纽蓝科技有限公司</h2>
 	        </div>
 	        <div class="menu fr">
@@ -151,15 +142,15 @@
 								$(this).addClass("mj_hover_menu");
 								theMenu.stop().show().animate({height:tarHeight},400);
 							},
-				function(){
-					$(this).removeClass("mj_hover_menu");
-						theMenu.stop().animate({height:0},400,function(){
-						$(this).css({display:"none"});
+							function(){
+								$(this).removeClass("mj_hover_menu");
+								theMenu.stop().animate({height:0},400,function(){
+								$(this).css({display:"none"});
 								});
 							}
 						);
 					});
-				}
+				};
 				</script>
 	        </div>
 	    </div>
@@ -313,13 +304,15 @@
     </div>
 </div>
 <script src="{{ asset('js/fashionfoucs.js') }}"></script>
+<script src="{{ asset('js/jquery-1.9.1.min.js') }}"></script>
+<script src="{{ asset('js/jquery.plugin.min.js') }}"></script>
 <!--banner end-->
 
 <!--footer-->
 <div id="footer">
 	<div class="center">
 		<div class="left fl">
-			<li><a href="About5.html">联系我们</a><span>丨</span>客服电话:400-0717-168</li>
+			<li><a href="{{ url('/about/5') }}">联系我们</a><span>丨</span>客服电话:400-0717-168</li>
 		</div>
 		<div class="right fr">
 			<li>杭州纽蓝科技有限公司--版权所有 浙ICP备11030739号</li>

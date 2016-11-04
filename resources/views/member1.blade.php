@@ -4,7 +4,7 @@
 
 <!--banner-->
 <div id="banner">
-	<img src="{{ asset('images/member_02.jpg') }}"/>
+	<img src="{{ asset('images/members.jpg') }}"/>
 </div>
 <!--banner end-->
 
