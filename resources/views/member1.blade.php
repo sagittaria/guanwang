@@ -29,6 +29,7 @@
 				<li>></li>
 				<a >晶百检测</a>
 			</div>
+			<hr>
 			<div class="box">				
 				<img src="{{ asset('images/member1_03.jpg') }}"/>
 			</div>

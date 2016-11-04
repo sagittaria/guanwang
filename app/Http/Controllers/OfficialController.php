@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Article;
+use App\Catalog;
 use EndaEditor;
 
 class OfficialController extends Controller
@@ -23,14 +24,14 @@ class OfficialController extends Controller
 	}
 
 
-	public function showOneRecent($aid)
-	{
-        //显示专门的一篇
-		$article = Article::findOrFail($aid);
-        //return view('recentDetail',['article'=>$article]);
-		$content = EndaEditor::MarkDecode($article->content);
-		return view('recentDetail',['content'=>$content,'article'=>$article]);
-	} 
+	// public function showOneRecent($aid)
+	// {
+ //        //显示专门的一篇
+	// 	$article = Article::findOrFail($aid);
+ //        //return view('recentDetail',['article'=>$article]);
+	// 	$content = EndaEditor::MarkDecode($article->content);
+	// 	return view('recentDetail',['content'=>$content,'article'=>$article]);
+	// } 
 
 	public function members()
 	{
@@ -52,14 +53,20 @@ class OfficialController extends Controller
 		return view('about'.$aid,['cssname'=>'about'.$aid.'.css']);
 	}
 	
-	public function news()
-	{
-		return view('news',['cssname'=>'news.css']);
+	public function newsList($nid)
+	{//列出各分类下面的文章列表，&nid就做 catalog_id 来用
+		$articles = Article::orderBy('updated_at', 'desc')->where('catalog_id','=',$nid)->get();
+		$selected_catalog_name =  $articles[0]->Catalog->name;
+		$catalogs = Catalog::orderBy('id')->get();
+		return view('newsList',['cssname'=>'newsList.css', 'articles'=>$articles,'selected_catalog_name'=>$selected_catalog_name,'catalogs'=>$catalogs]);
 	}
-	
-	public function newsDetail($nid)
-	{
-		return view('news'.$nid,['cssname'=>'news'.$nid.'.css']);
+
+	public function newsDetail($cid)
+	{//显示文章详情页，cid里的c表示content
+		$article = Article::findOrFail($cid);
+        //return view('recentDetail',['article'=>$article]);
+		$content = EndaEditor::MarkDecode($article->content);
+		return view('newsDetail',['cssname'=>'newsDetail.css','content'=>$content,'article'=>$article]);
 	}
 	
 	public function product()

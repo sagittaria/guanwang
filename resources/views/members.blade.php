@@ -26,6 +26,7 @@
 				<li>></li>
 				<a >纽蓝成员</a>
 			</div>
+			<hr>
 			<div class="box">
 				<a href="member/1"><img src="images/member_07.jpg"/></a>
 				<a href="member/1" style="padding: 50px 0;">杭州晶百检测技术有限公司</a>

@@ -2,8 +2,8 @@
 
 @section('content')
 
-@if(count($articles) >0)
 <div class="container">
+@if(count($articles) >0)
 <ul style="list-style-type:none;">
     @foreach ($articles as $article)
     <li style="margin-bottom:24px;">

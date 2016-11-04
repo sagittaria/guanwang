@@ -69,15 +69,15 @@
 	          					</div>
 	        				</div>
 	      				</li>
-	      				<li class="drop-menu-effect"> <a href="{{ url('/news') }}"><span>新闻中心</span></a>
+	      				<li class="drop-menu-effect"> <a href="{{ url('/news/1') }}"><span>新闻中心</span></a>
 	      					<div class="submenu" style="left:-222px;">
 	          					<div class="mj_menu_news_bg">
 	            					<div class="mj_menu_news_main">
 	              						<div class="mj_menu_news_li">
 	                						<div class="mj_menu_li_txt">
-	                							<a href="{{ url('/news') }}">公司动态</a><br />							                 	
-							                  	<a href="{{ url('/news/1') }}">活动信息</a><br />
-							                  	<a href="{{ url('/news/2') }}">行业动态</a>
+	                							<a href="{{ url('/news/1') }}">公司动态</a><br />							                 	
+							                  	<a href="{{ url('/news/2') }}">活动信息</a><br />
+							                  	<a href="{{ url('/news/3') }}">行业动态</a>
 	                						</div>
 	              						</div>
 	              						<div class="mj_menu_news_img"><img src="{{ asset('images/case_menu_pic4.jpg') }}" /><br />

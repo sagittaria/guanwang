@@ -29,6 +29,7 @@
 				<li>></li>
 				<a >晶佰生物</a>
 			</div>
+			<hr>
 			<div class="pic">
 				<img src="{{ asset('images/member2_03.jpg') }}"/>
 			</div>			
