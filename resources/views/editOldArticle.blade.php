@@ -1,15 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<!--<div class="editor">
-  <form method="post" action="{{ action('HomeController@update',[$article->id]) }}">
-  	{{ method_field('PUT') }}
-  	{{ csrf_field() }}
-  	<input type="text" name="Article[title]" value="{{ $article->title }}"><br>
-  	<textarea name="Article[content]" id="myEditor">{{ $article->content }}</textarea><br>
-  	<input type="submit" name="提交">
-  </form>
-</div>-->
 <div class="container editor">
   <form method="post" action="{{ action('HomeController@update',[$article->id]) }}" class="form-horizontal">
     {{ method_field('PUT') }}

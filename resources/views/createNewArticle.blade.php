@@ -1,18 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<!--
-  <div class="editor">
-    <form action="{{ action('HomeController@store') }}" method="post">
-    	{{ csrf_field() }}
-    	<input type="text" name="title"><br>
-    	<textarea name="content" id="myEditor"></textarea></div>
-    	<input type="submit" name="提交" class="btn btn-primary">
-    </form>
-  <br>
--->  
 <div class="container editor">
-  <form method="post" action="{{ action('HomeController@store') }}" class="form-horizontal">
+  <form method="post" action="{{ action('HomeController@store') }}" class="form-horizontal" enctype="multipart/form-data">
     {{ csrf_field() }}
     <div class="form-group">
       <div class="col-md-2">        

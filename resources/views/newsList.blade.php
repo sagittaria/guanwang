@@ -34,34 +34,16 @@
 			</div>
 			@foreach($articles as $article)
 				<div class="box">
-				<img src="{{ asset('images/about1_03.jpg') }}"/>
+				<img src="{{ asset('upload/'.mb_substr($article->content,-36)) }}"/>
 				<a href="{{ url('/news/detail/'.$article->id) }}">{{ $article->title }}</a>
 				<li>{{ substr($article->updated_at,0,-9) }}</li>
-				<p>
 				@if(mb_strlen($article->content)>170)
-					{{ mb_substr($article->content,0,160) }}...
+					{{ mb_substr($article->content,0,160) }}...</p>
 				@else
-					{{  $article->content }}
+					<p>{{ $article->content }}</p>
 				@endif
-				</p>
-			</div>
+				</div>
 			@endforeach
-
-
-			<!--
-			<div style="clear:both;"></div>
-			<div class="page">
-				<li><a href="#">首页</a></li>
-				<li><a href="#">上一页</a></li>
-				<li><a href="#" class="active">1</a></li>
-				<li><a href="#">2</a></li>
-				<li><a href="#">3</a></li>
-				<li><a href="#">4</a></li>
-				<li><a href="#">5</a></li>
-				<li><a href="#">下一页</a></li>
-				<li><a href="#">末页</a></li>
-			</div>
-			-->
 		</div>
 	</div>
 </div>

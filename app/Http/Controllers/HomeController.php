@@ -6,6 +6,7 @@ use App\Http\Requests;
 use Illuminate\Http\Request;
 use App\Article;
 use App\Catalog;
+use EndaEditor;
 
 class HomeController extends Controller
 {
@@ -59,10 +60,21 @@ class HomeController extends Controller
         return redirect('/home');
     }
 
+    public function preview($aid){
+        //在后台预览效果
+        $article = Article::findOrFail($aid);
+        $content = EndaEditor::MarkDecode($article->content);
+        return view('previewOneArticle',['content'=>$content,'article'=>$article]);
+    }
+
     public function destroy($aid){
         Article::find($aid)->delete();
         return redirect('/home');
     }
 
-
+    public function upload(){
+        //这是上传图片的功能，给ajax用
+        $data = EndaEditor::uploadImgFile('upload');
+        return json_encode($data);
+    }
 }
