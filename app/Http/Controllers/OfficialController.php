@@ -58,6 +58,19 @@ class OfficialController extends Controller
 		$articles = Article::orderBy('updated_at', 'desc')->where('catalog_id','=',$nid)->get();
 		$selected_catalog_name =  $articles[0]->Catalog->name;
 		$catalogs = Catalog::orderBy('id')->get();
+		//---------------------------------------------------为了不显示markdown原文的封面图的标记，类似![\444.png][0.5851929746568203]的东西
+		foreach ($articles as $article) {
+			$count=0;
+			$idx=0;
+			while($count<2){
+				if(mb_substr($article->content, $idx, 1)=="]"){
+					$count++;
+				}
+				$idx++;
+			}
+			$article->content=mb_substr($article->content, $idx);
+		}
+		//----------------------------------------------------------------
 		return view('newsList',['cssname'=>'newsList.css', 'articles'=>$articles,'selected_catalog_name'=>$selected_catalog_name,'catalogs'=>$catalogs]);
 	}
 
