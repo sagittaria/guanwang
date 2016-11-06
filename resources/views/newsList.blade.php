@@ -34,7 +34,7 @@
 			</div>
 			@foreach($articles as $article)
 				<div class="box">
-				<img src="{{ asset('images/about1_03.jpg') }}"/>
+				<img src="{{ asset('upload/'.mb_substr($article->content,-36)) }}"/>
 				<a href="{{ url('/news/detail/'.$article->id) }}">{{ $article->title }}</a>
 				<li>{{ substr($article->updated_at,0,-9) }}</li>
 				@if(mb_strlen($article->content)>170)

@@ -9,7 +9,7 @@
     <li style="margin-bottom:24px;">
         <h4>
 			<a class="btn btn-primary btn-xs" href="{{ action('HomeController@edit',[$article->id]) }}">编辑</a> 
-            [{{ $article->catalog->name }}] {{ $article->title }} &nbsp;&nbsp;<small>{{ $article->updated_at }}</small>
+            <a href="{{ url('/preview/'.$article->id) }}">[{{ $article->catalog->name }}] {{ $article->title }} </a> &nbsp;&nbsp;<small>{{ $article->updated_at }}</small>
             <form action="{{ action('HomeController@destroy',[$article->id]) }}" method="POST" style="display: inline;">  
                 {{ method_field('DELETE') }}
                 {{ csrf_field() }}

@@ -34,7 +34,9 @@ Route::group(['middleware' => 'web'], function () {
     Route::post('/create','HomeController@store');//保存新文
     Route::get('/edit/{aid}','HomeController@edit');//编辑一篇
     Route::put('/edit/{aid}','HomeController@update');//保存更改
+    Route::get('/preview/{aid}','HomeController@preview');//后台预览
     Route::delete('/delete/{aid}','HomeController@destroy');//删除一篇
+    Route::post('/upload/picture','HomeController@upload');//上传图片，供ajax用
 
     Route::get('/','OfficialController@index');//官网首页
     Route::get('/members','OfficialController@members');//纽蓝成员
@@ -48,7 +50,6 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/solution','OfficialController@solution');//解决方案
     Route::get('/solution/{sid}','OfficialController@solutionDetail');//新闻详情
 
-
-    Route::get('/about/recent','OfficialController@listRecent');
-    Route::get('/about/recent/{aid}','OfficialController@showOneRecent');
+    //Route::get('/about/recent','OfficialController@listRecent');
+    //Route::get('/about/recent/{aid}','OfficialController@showOneRecent');
 });
