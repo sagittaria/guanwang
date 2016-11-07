@@ -77,8 +77,11 @@ class OfficialController extends Controller
 	public function newsDetail($cid)
 	{//显示文章详情页，cid里的c表示content
 		$article = Article::findOrFail($cid);
-        //return view('recentDetail',['article'=>$article]);
 		$content = EndaEditor::MarkDecode($article->content);
+		//--------------去掉存在markdown文本里的<p><img src=.../></p>
+		$idx=stripos($content,"</p>");
+		$content=mb_substr($content, $idx);
+		//---------------------------
 		return view('newsDetail',['cssname'=>'newsDetail.css','content'=>$content,'article'=>$article]);
 	}
 	

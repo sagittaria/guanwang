@@ -30,7 +30,7 @@
 			<hr>
 			<h3>{{ $article->title }}</h3>
 			<li>发布日期:{{ substr($article->updated_at,0,-9) }}</li>
-			<img src="{{ asset('images/about4_01.jpg') }}"/>
+			<img src="{{ '/upload/'.mb_substr($article->content,-36) }}"/>
 			<div id="article-content">{!! $content !!}</div>
 		</div>
 	</div>
